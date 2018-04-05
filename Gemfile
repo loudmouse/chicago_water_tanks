@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.2'
+gem 'bootstrap-generators', '~> 3.3', '>= 3.3.4'
+gem 'record_tag_helper', '~> 1.0'

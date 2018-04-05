@@ -1,2 +1,0 @@
-class WaterTankLocation < ApplicationRecord
-end

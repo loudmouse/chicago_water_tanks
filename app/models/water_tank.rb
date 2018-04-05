@@ -1,0 +1,2 @@
+class WaterTank < ApplicationRecord
+end

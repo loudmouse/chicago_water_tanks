@@ -3,9 +3,13 @@
 one:
   latitude: 1.5
   longitude: 1.5
-  info: MyText
+  nickname: MyString
+  address: MyString
+  neighborhood: MyString
 
 two:
   latitude: 1.5
   longitude: 1.5
-  info: MyText
+  nickname: MyString
+  address: MyString
+  neighborhood: MyString

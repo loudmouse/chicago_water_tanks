@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Chicago Water Tanks is a web app that empowers a user to document the location of historical water tanks around the city of Chicago by adding a marker to the map along with a an image. The goal is to discover and map every water tank in the city. Happy hunting!

@@ -5,6 +5,11 @@ class WaterTanksController < ApplicationController
   # GET /water_tanks.json
   def index
     @water_tanks = WaterTank.all
+    @hash = Gmaps4rails.build_markers(@water_tanks) do |tank, marker|
+      marker.lat tank.latitude
+      marker.lng tank.longitude
+      marker.infowindow tank.nickname
+    end
   end
 
   # GET /water_tanks/1

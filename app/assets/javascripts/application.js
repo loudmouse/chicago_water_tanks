@@ -13,4 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require bootstrap
+//= require underscore
+//= require gmaps/google
 //= require_tree .

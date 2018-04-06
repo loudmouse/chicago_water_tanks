@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.2'
 gem 'bootstrap-generators', '~> 3.3', '>= 3.3.4'
 gem 'record_tag_helper', '~> 1.0'
+gem 'geocoder', '~> 1.3', '>= 1.3.7'
+gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'

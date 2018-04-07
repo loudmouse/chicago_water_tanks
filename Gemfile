@@ -58,4 +58,5 @@ gem 'bootstrap-generators', '~> 3.3', '>= 3.3.4'
 gem 'record_tag_helper', '~> 1.0'
 gem 'geocoder', '~> 1.3', '>= 1.3.7'
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
+
+gem 'paperclip', '~> 5.2.0'

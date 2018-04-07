@@ -74,6 +74,6 @@ class WaterTanksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def water_tank_params
-      params.require(:water_tank).permit(:latitude, :longitude, :nickname, :address, :neighborhood)
+      params.require(:water_tank).permit(:latitude, :longitude, :nickname, :address, :neighborhood, :image)
     end
 end

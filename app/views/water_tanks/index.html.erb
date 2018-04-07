@@ -13,11 +13,12 @@
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
-            <th>Latitude</th>
-            <th>Longitude</th>
             <th>Nickname</th>
             <th>Address</th>
             <th>Neighborhood</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Image</th>
             <th></th>
         <th></th>
         <th></th>
@@ -26,11 +27,12 @@
 
     <tbody>
       <%= content_tag_for(:tr, @water_tanks) do |water_tank| %>
-            <td><%= water_tank.latitude %></td>
-            <td><%= water_tank.longitude %></td>
             <td><%= water_tank.nickname %></td>
             <td><%= water_tank.address %></td>
             <td><%= water_tank.neighborhood %></td>
+            <td><%= water_tank.latitude %></td>
+            <td><%= water_tank.longitude %></td>
+            <td><%= image_tag water_tank.image.url(:thumb) %></td>
             <td><%= link_to 'Show', water_tank %></td>
         <td><%= link_to 'Edit', edit_water_tank_path(water_tank) %></td>
         <td><%= link_to 'Destroy', water_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>

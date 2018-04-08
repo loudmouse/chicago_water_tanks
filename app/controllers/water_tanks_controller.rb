@@ -1,5 +1,6 @@
 class WaterTanksController < ApplicationController
   before_action :set_water_tank, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /water_tanks
   # GET /water_tanks.json
@@ -19,7 +20,7 @@ class WaterTanksController < ApplicationController
 
   # GET /water_tanks/new
   def new
-    @water_tank = WaterTank.new
+    @water_tank = current_user.water_tanks.build
   end
 
   # GET /water_tanks/1/edit
@@ -29,7 +30,7 @@ class WaterTanksController < ApplicationController
   # POST /water_tanks
   # POST /water_tanks.json
   def create
-    @water_tank = WaterTank.new(water_tank_params)
+    @water_tank = current_user.water_tanks.build(water_tank_params)
 
     respond_to do |format|
       if @water_tank.save

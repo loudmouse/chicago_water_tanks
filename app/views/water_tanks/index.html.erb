@@ -20,6 +20,7 @@
             <th>Nickname</th>
             <th>Address</th>
             <th>Neighborhood</th>
+            <th>User</th>
             <th>Latitude</th>
             <th>Longitude</th>
             <th>Image</th>
@@ -34,12 +35,15 @@
             <td><%= water_tank.nickname %></td>
             <td><%= water_tank.address %></td>
             <td><%= water_tank.neighborhood %></td>
+            <td><%= water_tank.user.email %></td>
             <td><%= water_tank.latitude %></td>
             <td><%= water_tank.longitude %></td>
             <td><%= image_tag water_tank.image.url(:thumb) %></td>
             <td><%= link_to 'Show', water_tank %></td>
-        <td><%= link_to 'Edit', edit_water_tank_path(water_tank) %></td>
-        <td><%= link_to 'Destroy', water_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% if water_tank.user == current_user %>
+              <td><%= link_to 'Edit', edit_water_tank_path(water_tank) %></td>
+              <td><%= link_to 'Destroy', water_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
       <% end %>
     </tbody>
   </table>

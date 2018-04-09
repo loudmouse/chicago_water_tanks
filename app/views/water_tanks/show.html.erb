@@ -3,9 +3,11 @@
     <span class="glyphicon glyphicon-list-alt"></span>
     Back
   <% end %>
-  <%= link_to edit_water_tank_path(@water_tank), class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    Edit
+  <% if @water_tank.user == current_user %>
+    <%= link_to edit_water_tank_path(@water_tank), class: 'btn btn-primary' do %>
+      <span class="glyphicon glyphicon-pencil"></span>
+      Edit
+    <% end %>
   <% end %>
   <h1><%= @water_tank.nickname %></h1>
   <h3><%= @water_tank.neighborhood %></h3>

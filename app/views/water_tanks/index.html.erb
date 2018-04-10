@@ -2,14 +2,14 @@
 <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
 <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
 <div class="page-header">
-  
+
   <% if !user_signed_in? %>
     <%= render "layouts/jumbotron" %>
   <% end %>
 
   <% if user_signed_in? %>
     <div class="button-wrapper">
-      <%= link_to "Map a Water Tank", new_user_registration_path, class: "btn btn-primary btn-rounded btn-lg"  %>
+      <%= link_to "Map a Water Tank", link_to new_water_tank_path, class: "btn btn-primary btn-rounded btn-lg"  %>
     </div>
   <% end %>
 

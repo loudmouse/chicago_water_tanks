@@ -44,7 +44,7 @@
             <td><%= water_tank.user.email %></td>
             <td><%= water_tank.latitude %></td>
             <td><%= water_tank.longitude %></td>
-            <td><%= image_tag water_tank.image(:thumb) %></td>
+            <td><%= image_tag water_tank.image.url(:thumb) %></td>
             <td><%= link_to 'Show', water_tank %></td>
             <% if water_tank.user == current_user %>
               <td><%= link_to 'Edit', edit_water_tank_path(water_tank) %></td>

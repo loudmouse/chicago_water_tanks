@@ -14,3 +14,6 @@ You can find me on [Twitter](https://twitter.com/loudmouse312), [LinkedIn](https
 * Implement AWS S3 storage with Paperclip because Heroku does not support file uploads.
 * Display map of individual tank location in show view
 * Add username to user model
+* Display image inside map marker info window
+* Add search feature
+* Add ability to auto-detect a water tank's neighborhood based on location of map marker

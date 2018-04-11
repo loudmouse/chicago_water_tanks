@@ -9,7 +9,7 @@
 
   <% if user_signed_in? %>
     <div class="button-wrapper">
-      <%= link_to "Map a Water Tank", new_water_tank_path, class: "btn btn-primary btn-rounded btn-lg"  %>
+      <%= link_to "Map a Water Tank", link_to new_water_tank_path, class: "btn btn-primary btn-rounded btn-lg"  %>
     </div>
   <% end %>
 

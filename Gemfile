@@ -16,7 +16,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'aws-sdk', '~> 2.3'
+  gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 end
 
 
@@ -70,4 +70,4 @@ gem 'geocoder', '~> 1.3', '>= 1.3.7'
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'paperclip'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'

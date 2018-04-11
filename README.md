@@ -11,4 +11,5 @@ You can find me on [Twitter](https://twitter.com/loudmouse312), [LinkedIn](https
 ---
 
 ### Coming Updates:
-* Implement AWS S3 storage with Paperclip because Heroku does not support file uploads. 
+* Implement AWS S3 storage with Paperclip because Heroku does not support file uploads.
+* Display map of individual tank location in show view
